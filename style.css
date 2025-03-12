@@ -1,0 +1,210 @@
+.div-root {
+    width: 310px;
+    height: 304px;
+  }
+  
+  .div-root .div-muipaper-root {
+    position: relative;
+    width: 286px;
+    height: 280px;
+    top: 12px;
+    left: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 12px 24px -4px #919eab1f, 0px 0px 2px #919eab33;
+  }
+  
+  .div-root .overlap-group-wrapper {
+    height: 280px;
+  }
+  
+  .div-root .overlap-group {
+    position: relative;
+    width: 286px;
+    height: 280px;
+  }
+  
+  .div-root .div-slick-list {
+    position: absolute;
+    width: 286px;
+    height: 280px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .div-root .div-slick-track {
+    position: relative;
+    width: 3146px;
+    height: 280px;
+    left: -286px;
+  }
+  
+  .div-root .div-slick-slide {
+    position: relative;
+    width: 286px;
+    height: 280px;
+    left: 286px;
+  }
+  
+  .div-root .span-component-image {
+    position: absolute;
+    width: 286px;
+    height: 280px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: url(./img/product-1-jpg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .div-root .before {
+    position: relative;
+    height: 280px;
+    top: 5px;
+    left: 11px;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 28, 36, 0) 0%,
+      rgb(22, 28, 36) 75%
+    );
+  }
+  
+  .div-root .div-muicardcontent {
+    position: absolute;
+    width: 286px;
+    height: 170px;
+    top: 110px;
+    left: 0;
+  }
+  
+  .div-root .new {
+    position: absolute;
+    width: 29px;
+    height: 14px;
+    top: 30px;
+    left: 24px;
+    opacity: 0.48;
+    font-family: "Public Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .div-root .heading {
+    position: absolute;
+    width: 238px;
+    height: 30px;
+    top: 56px;
+    left: 24px;
+  }
+  
+  .div-root .text-wrapper {
+    position: absolute;
+    width: 227px;
+    height: 24px;
+    top: 2px;
+    left: 0;
+    font-family: "Public Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  
+  .div-root .button {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    width: 83px;
+    height: 36px;
+    top: 110px;
+    left: 24px;
+    background-color: #00a76f;
+    border-radius: 8px;
+  }
+  
+  .div-root .div {
+    position: absolute;
+    width: 59px;
+    height: 17px;
+    top: 8px;
+    left: 12px;
+    font-family: "Public Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  
+  .div-root .list {
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    top: 242px;
+    left: 176px;
+  }
+  
+  .div-root .item {
+    left: 0;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+  }
+  
+  .div-root .span-css-mkgmya {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    top: 5px;
+    left: 5px;
+    background-color: #5be49b;
+    border-radius: 4px;
+  }
+  
+  .div-root .span-css-mkgmya-wrapper {
+    left: 18px;
+    opacity: 0.32;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+  }
+  
+  .div-root .div-wrapper {
+    left: 36px;
+    opacity: 0.32;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+  }
+  
+  .div-root .item-2 {
+    left: 54px;
+    opacity: 0.32;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+  }
+  
+  .div-root .item-3 {
+    left: 72px;
+    opacity: 0.32;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+  }
