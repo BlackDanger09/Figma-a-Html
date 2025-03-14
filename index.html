@@ -17,9 +17,9 @@
                     <div class="overlap-group">
                       <div class="span-component-image"><div class="before"></div></div>
                       <div class="div-muicardcontent">
-                        <div class="new">NEW</div>
-                        <div class="heading"><p class="text-wrapper">Nike Air Force 1 NDES…</p></div>
-                        <button class="button"><div class="div">Buy Now</div></button>
+                        <div class="new">CF</div>
+                        <div class="heading"><p class="text-wrapper">NK800CF</p></div>
+                        <button class="button"><div class="div">BUY</div></button>
                       </div>
                     </div>
                   </div>
@@ -37,5 +37,47 @@
         </div>
       </div>
     </div>
+    <div>
+      <select id="characterSelect">
+        <option value="">Selecciona un personaje</option>
+      </select>
+      <button id="searchButton">Buscar</button>
+    </div>
+    <div id="characterInfo">
+      <img id="characterImage" src="" alt="Imagen del personaje" />
+      <p id="characterName"></p>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('https://dragonball-api.com/api/characters')
+          .then(response => response.json())
+          .then(data => {
+            const select = document.getElementById('characterSelect');
+            data.items.forEach(character => {
+              const option = document.createElement('option');
+              option.value = character.id;
+              option.textContent = character.name;
+              select.appendChild(option);
+            });
+          })
+          .catch(error => console.error('Error al obtener los datos:', error));
+      });
+
+      document.getElementById('searchButton').addEventListener('click', function() {
+        const characterId = document.getElementById('characterSelect').value;
+        if (characterId) {
+          fetch(`https://dragonball-api.com/api/characters/${characterId}`)
+            .then(response => response.json())
+            .then(data => {
+              document.querySelector('.span-component-image').style.backgroundImage = `url(${data.image})`;
+              document.getElementById('characterImage').src = data.image;
+              document.getElementById('characterName').textContent = data.name;
+            })
+            .catch(error => console.error('Error al obtener los datos:', error));
+        } else {
+          alert('Por favor, selecciona un personaje.');
+        }
+      });
+    </script>
   </body>
 </html>
